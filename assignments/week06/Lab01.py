@@ -69,7 +69,7 @@ def count_vowels_consonants(text):
     return {"vowels": vowels, "consonants": consonants}
 
 def count_vowels_consonants(text):
-    text = "WE eat code like meal"
+    
     text.lower()
     text.replace(" ","")
     text.replace("0","")
@@ -150,7 +150,7 @@ def run_all_tests():
     # Test Problem 5
     print("\n--- Problem 5 Tests ---")
     try:
-        result1 = count_vowels_consonants("Hello World")
+        result1 = count_vowels_consonants("Hello Worldoooooo")
         print(f"Test 1: {result1}")
         result2 = count_vowels_consonants("Python Programming 2024")
         print(f"Test 2: {result2}")
@@ -161,6 +161,7 @@ def run_all_tests():
     print("\n" + "="*50)
     print("END OF TESTS")
     print("="*50)
+    
 
 # Run the tests
 if __name__ == "__main__":
