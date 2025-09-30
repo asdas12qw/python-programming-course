@@ -47,3 +47,17 @@ Transformations:
 USE: len(), split(), count(), upper(), lower(), title(), slicing operations
 
 """
+text = "The Quick Brown      Fox Jumps Over The Lazy Dog "
+
+print("=== TEXT ANALYSIS REPORT ===")
+print("Character Analysis")
+print("- Totel characters: %d (with spaces), %d (without spaces) "% (len(text), len(text) - text.count(' ')))
+Vowels = text.count('a') +text.count('A') + text.count('e') +text.count('E') + text.count('i') +text.count('I') + text.count('o') +text.count('O') +text.count('u') +text.count('U') 
+
+Vowels_count = ""
+for char in text:
+    if char in ['a', 'A', 'e', 'E','i', 'I', 'o', 'O', 'u', 'U']:
+        Vowels_count += char + ", "
+
+print("- Vowels: %d (%s)"%(Vowels, Vowels_count[0:-2]))
+print(f"- Consonants: {len(text) - text.count(' ') - Vowels}")
